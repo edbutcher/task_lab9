@@ -10,10 +10,6 @@ body {
     text-align: center;
 }
 
-.wrapper {
-    padding: 0 10vw;
-}
-
 h1, h2, h3 {
     margin: 0;
     padding: 1em 0;
@@ -30,64 +26,6 @@ img {
     display: block;
     width: 100;
     height: auto;
-}
-
-/* a.btn-l {
-    padding: 20px;
-    color: white;
-    background: #a3cd8c;
-    border-radius: 40px;
-    font-size: 20px 60px;
-    font-weight: bold;
-    font-style: normal;
-} */
-
-
-/* Navigation */
-
-nav {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    position: absolute;
-    height: 8vh;
-    width: 78vw;
-    z-index: 2;
-}
-nav div {
-    display: flex;
-    justify-content: space-between;
-}
-
-span#nav-icon {
-    color: red;
-    background: white;
-    border-radius: 10px;
-}
-
-/* nav ul {
-    list-style: none;
-    margin: 0;
-    padding: 0;
-}
-nav ul li {
-    display: inline-block;
-    text-transform: uppercase;
-}
-
-.btn-s {
-    color: white;
-    padding: 7px 12px;
-}
-
-.btn-s:hover {
-    border: 2px solid white;
-    border-radius: 20px;
-    padding: 5px 10px;
-} */
-
-.expanded {
-    display: none;
 }
 
 /* Header */
@@ -122,9 +60,14 @@ section#header {
     display: inline-block;
     color: #fff;
     text-decoration: none;
-    padding: 1em 4em;
+    text-transform: uppercase;
+    padding: 1em 2em;
     background: #a3cd8c;
     border-radius: 2em;
+
+    font-size: 1.5em;
+    font-weight: bold;
+    font-style: normal;
 }
 
 div.colored-line {
@@ -132,6 +75,53 @@ div.colored-line {
     height: 5px;
     background-image: linear-gradient( to right, #9ec795, #82a9cc);
 }
+
+/* Navigation */
+
+.expanded {
+    display: none;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: absolute;
+    height: 8vh;
+    width: 100%;
+    z-index: 2;
+}
+nav div {
+    display: flex;
+    justify-content: space-between;
+}
+
+span#nav-icon {
+    color: red;
+    background: white;
+    border-radius: 10px;
+}
+
+/* nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+nav ul li {
+    display: inline-block;
+    text-transform: uppercase;
+}
+
+.btn-s {
+    color: white;
+    padding: 7px 12px;
+}
+
+.btn-s:hover {
+    border: 2px solid white;
+    border-radius: 20px;
+    padding: 5px 10px;
+} */
 
 /* Main */
 
@@ -141,9 +131,9 @@ main {
 
 /* Sections */
 
-section {
+/* section {
     height: 50vh;
-}
+} */
 /* section:not([id=header]) {
     border-bottom: 3px solid #4f647d;
 } */
@@ -153,8 +143,7 @@ section {
 
 footer {
     position: static;
-    display: flex;
-    height: 8vh;
+    /* height: 8vh; */
     background: #373f55;
 }
 
